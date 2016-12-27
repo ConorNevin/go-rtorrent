@@ -1,0 +1,3 @@
+package: github.com/ConorNevin/go-rtorrent
+import:
+- package: github.com/kolo/xmlrpc
