@@ -1,9 +1,9 @@
 package rtorrent
 
 import (
-	"github.com/kolo/xmlrpc"
-	"net/http"
 	"fmt"
+	"github.com/ConorNevin/xmlrpc"
+	"net/http"
 )
 
 type RTorrent struct {
@@ -120,13 +120,13 @@ type Credentials struct {
 
 type BasicAuthRoundTripper struct {
 	RoundTripper http.RoundTripper
-	Credentials *Credentials
+	Credentials  *Credentials
 }
 
 func NewBasicAuthRoundTripper(roundTripper http.RoundTripper, creds *Credentials) *BasicAuthRoundTripper {
 	return &BasicAuthRoundTripper{
 		RoundTripper: roundTripper,
-		Credentials: creds,
+		Credentials:  creds,
 	}
 }
 
